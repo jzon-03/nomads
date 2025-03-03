@@ -11,9 +11,9 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { MaterialModule } from './material/material.module';
 import { GuideSeasonsComponent } from './pages/guide/guide-seasons/guide-seasons.component';
 import { AdminComponent } from './admin/admin.component';
-import { ProteinCalculatorComponent } from './protein-calculator/protein-calculator.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ProteinCalcImageComponent } from './protein-calculator/protein-calc-image/protein-calc-image.component';
+import { ProteinCalcImageComponent } from './calculator/calc-image/calc-image.component';
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
 import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy-calc.component';
 
@@ -25,7 +25,7 @@ import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy
     AllianceMilestonesComponent,
     GuideSeasonsComponent,
     AdminComponent,
-    ProteinCalculatorComponent,
+    CalculatorComponent,
     ProteinCalcImageComponent,
     WarzoneExpeditionComponent,
     TitaniumAlloyCalcComponent

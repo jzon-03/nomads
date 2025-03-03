@@ -5,8 +5,10 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "ghpages-build": "ng build --base-href 'https://jzon-03.github.io/nomads/'",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "npx angular-cli-ghpages --dir=dist/nomads-alliance/browser"
   },
   "private": true,
   "dependencies": {

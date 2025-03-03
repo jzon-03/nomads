@@ -4,7 +4,7 @@ import { MembersComponent } from './members/members.component';
 import { GuideComponent } from './pages/guide/guide.component';
 import { AllianceMilestonesComponent } from './pages/alliance-milestones/alliance-milestones.component';
 import { AdminComponent } from './admin/admin.component';
-import { ProteinCalculatorComponent } from './protein-calculator/protein-calculator.component';
+import { CalculatorComponent } from './calculator/calculator.component';
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
 
 const routes: Routes = [
@@ -24,7 +24,7 @@ const routes: Routes = [
     path: 'admin', component: AdminComponent
   },
   {
-    path: 'proteincalculator', component: ProteinCalculatorComponent
+    path: 'calculator', component: CalculatorComponent
   },
   {
     path: 'warzone-expedition', component: WarzoneExpeditionComponent

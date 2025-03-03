@@ -8,3 +8,9 @@ form{
     display: grid;
     grid-template-columns: 1fr;
 }
+
+.alert{
+    background-color: blue; 
+    color: yellow;
+    font-size: 1.5em;
+}
