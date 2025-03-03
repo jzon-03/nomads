@@ -4,7 +4,6 @@ import { MembersComponent } from './members/members.component';
 import { GuideComponent } from './pages/guide/guide.component';
 import { AllianceMilestonesComponent } from './pages/alliance-milestones/alliance-milestones.component';
 import { AdminComponent } from './admin/admin.component';
-import { ClapBackComponent } from './clap-back/clap-back.component';
 import { ProteinCalculatorComponent } from './protein-calculator/protein-calculator.component';
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
 
@@ -26,9 +25,6 @@ const routes: Routes = [
   },
   {
     path: 'proteincalculator', component: ProteinCalculatorComponent
-  },
-  {
-    path: 'clapbackgpt', component: ClapBackComponent
   },
   {
     path: 'warzone-expedition', component: WarzoneExpeditionComponent

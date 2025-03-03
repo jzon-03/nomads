@@ -18,9 +18,10 @@ interface Member {
 }
 
 @Component({
-  selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css']
+    selector: 'app-members',
+    templateUrl: './members.component.html',
+    styleUrls: ['./members.component.css'],
+    standalone: false
 })
 export class MembersComponent implements OnInit {
   leader: any;

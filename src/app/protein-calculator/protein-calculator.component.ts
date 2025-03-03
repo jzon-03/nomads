@@ -57,9 +57,11 @@ const calcData: SeasonNode[] = [
 ]
 
 @Component({
-  selector: 'app-protein-calculator',
-  templateUrl: './protein-calculator.component.html',
-  styleUrls: ['./protein-calculator.component.css'] // Corrected key name
+    selector: 'app-protein-calculator',
+    templateUrl: './protein-calculator.component.html',
+    styleUrls: ['./protein-calculator.component.css'] // Corrected key name
+    ,
+    standalone: false
 })
 export class ProteinCalculatorComponent implements OnInit {
 
