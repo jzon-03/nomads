@@ -1,0 +1,40 @@
+<div class="header">
+    <section class="container">
+        <h2 class="logo red-text">About [NOMD]NOMADS</h2>
+        <p>
+            [NOMD]NOMADS is a strong alliance in server #764. Led by
+            <span class="tagline">{{ leader.username }}</span> (R5), we stand as a united force.
+        </p>
+    </section>
+
+    <section class="members">
+        <h2>Alliance Structure</h2>
+        <div class="leader">
+            <h3>Leader: <span class="gold-text">{{ leader.username }} (R5)</span></h3>
+        </div>
+        <div class="support">
+            <h3>R4 Members</h3>
+            <div class="member-list">
+                <div *ngFor="let member of r4Members" class="member-card">{{ member.UserName }}</div>
+            </div>
+        </div>
+        <div class="support">
+            <h3>R3 Members</h3>
+            <div class="member-list">
+                <div *ngFor="let member of r3Members" class="member-card">{{ member.UserName }}</div>
+            </div>
+        </div>
+        <div class="support">
+            <h3>R2 Members</h3>
+            <div class="member-list">
+                <div *ngFor="let member of r2Members" class="member-card">{{ member.UserName }}</div>
+            </div>
+        </div>
+        <div class="support">
+            <h3>R1 Members</h3>
+            <div class="member-list">
+                <div *ngFor="let member of r1Members" class="member-card">{{ member.UserName }}</div>
+            </div>
+        </div>
+    </section>
+</div>

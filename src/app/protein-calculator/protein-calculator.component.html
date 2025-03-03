@@ -1,0 +1,87 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <select [(value)]="selectedSeason" (change)="setLocalStorage()">
+                <option [value]="season1">Season 1</option>
+                <option [value]="season2">Season 2</option>
+            </select>
+        </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form [formGroup]="proteinForm">
+            <mat-form-field>
+                <mat-label>{{selectedSeason.buildings.seasonBuilding1}}(Output/hr)</mat-label>
+                <input matInput formControlName="pfi" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3733.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Protein Farm II(Output/hr)</mat-label>
+                <input matInput formControlName="pfii" type="number">
+                
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3733.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Protein Farm III(Output/hr)</mat-label>
+                <input matInput formControlName="pfiii" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3733.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Protein Farm IV(Output/hr)</mat-label>
+                <input matInput formControlName="pfiv" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3733.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Protein Farm Weekly Pass</mat-label>
+                <input matInput formControlName="pfWP" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3733.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <div>
+                <strong>
+                    Total Output
+                </strong>
+                {{ totalOutput }}
+            </div>
+            <hr>
+            <mat-form-field>
+                <mat-label>Current Protein</mat-label>
+                <input matInput formControlName="currentP" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3731.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Required Protein</mat-label>
+                <input matInput formControlName="requiredP" type="number">
+                <button mat-icon-button matSuffix (click)="openDialog('assets/IMG_3732.jpg')">
+                    <mat-icon>info</mat-icon>
+                </button>
+            </mat-form-field>
+        </form>
+        <div>
+            <span>
+                Next Virus Resistance in:
+            </span>
+            <strong>
+                {{ hours | number: '0.0' }} hours
+            </strong>
+        </div>
+        <div>
+            Set your alarm: {{completionTime | date: 'short'}}
+        </div>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="clearForm()">
+            Clear Form
+        </button>
+    </mat-card-actions>
+</mat-card>

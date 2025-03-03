@@ -1,0 +1,10 @@
+mat-card{
+    color: black;
+    max-width: 600px;
+    margin: auto;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+}
