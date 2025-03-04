@@ -17,8 +17,7 @@ import { ProteinCalcImageComponent } from './calculator/calc-image/calc-image.co
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
 import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy-calc.component';
 import { AddMemberDialogComponent } from './add-member-dialog/add-member-dialog.component';
-import { Season2Component } from './season2/season2.component';
-import { CalendarComponent } from './season2/calendar/calendar.component';
+import { CalendarComponent } from './calendar/calendar.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
@@ -34,7 +33,6 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     WarzoneExpeditionComponent,
     TitaniumAlloyCalcComponent,
     AddMemberDialogComponent,
-    Season2Component,
     CalendarComponent
   ],
   imports: [
