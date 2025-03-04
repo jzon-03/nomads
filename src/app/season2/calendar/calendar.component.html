@@ -1,0 +1,25 @@
+<div class="calendar">
+    <div class="calendar-header">
+      <button (click)="prevMonth()">&#9665;</button>
+      <h2>{{ monthLabel }}</h2>
+      <button (click)="nextMonth()">&#9655;</button>
+    </div>
+  
+    <div class="calendar-grid">
+      <div class="day-name" *ngFor="let day of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">
+        {{ day }}
+      </div>
+  
+      <div class="day"
+           *ngFor="let day of daysInMonth"
+           [class.current-day]="isToday(day)"
+           [class.selected-day]="selectedDate && isSameDay(day, selectedDate)"
+           (click)="selectDay(day)">
+        <span>{{ day.getDate() }}</span>
+        <div *ngIf="getEventLabel(day)" class="event-label">
+          {{ getEventLabel(day) }}
+        </div>
+      </div>
+    </div>
+  </div>
+  

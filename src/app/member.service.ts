@@ -17,4 +17,12 @@ export class MemberService {
   get764Members(){
     return this.http.get('https://api.sharpfloornc.com/members.php');
   }
+  
+  insertMember(body: any){
+    return this.http.post('https://api.sharpfloornc.com/insert_member.php', body);
+  }
+
+  updateRank(body: any){
+    return this.http.post('https://api.sharpfloornc.com/update_member_rank.php', body);
+  }
 }

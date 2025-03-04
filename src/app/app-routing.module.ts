@@ -6,6 +6,7 @@ import { AllianceMilestonesComponent } from './pages/alliance-milestones/allianc
 import { AdminComponent } from './admin/admin.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
+import { Season2Component } from './season2/season2.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,9 @@ const routes: Routes = [
   },
   {
     path: 'warzone-expedition', component: WarzoneExpeditionComponent
+  },
+  {
+    path: 'season2', component: Season2Component
   }
 ];
 

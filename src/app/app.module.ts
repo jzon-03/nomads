@@ -16,6 +16,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ProteinCalcImageComponent } from './calculator/calc-image/calc-image.component';
 import { WarzoneExpeditionComponent } from './unpublished-pages/warzone-expedition/warzone-expedition.component';
 import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy-calc.component';
+import { AddMemberDialogComponent } from './add-member-dialog/add-member-dialog.component';
+import { Season2Component } from './season2/season2.component';
+import { CalendarComponent } from './season2/calendar/calendar.component';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 
 @NgModule({
   declarations: [
@@ -28,15 +32,19 @@ import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy
     CalculatorComponent,
     ProteinCalcImageComponent,
     WarzoneExpeditionComponent,
-    TitaniumAlloyCalcComponent
+    TitaniumAlloyCalcComponent,
+    AddMemberDialogComponent,
+    Season2Component,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    BsDatepickerModule.forRoot(),
+],
   providers: [provideHttpClient(), provideAnimationsAsync()],
   bootstrap: [AppComponent]
 })

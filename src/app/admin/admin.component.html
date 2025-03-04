@@ -1,1 +1,42 @@
-<section></section>
+<div *ngIf="!allowed">
+    <mat-form-field>
+        <mat-label>Code</mat-label>
+        <input #pwInput matInput name="code">
+    </mat-form-field>
+    <button mat-button (click)="submit(pwInput.value)">OK</button>
+</div>
+<section *ngIf="allowed">
+    <button mat-flat-button (click)="addMember()">Add member</button>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Username</th>
+                <th (click)="toggleSortOrder()">Rank</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (item of members; track item) {
+                <tr>
+                    <td>{{item.UserName}}</td>
+                    <td>{{item.Rank}}</td>
+                    <td>
+                        <button mat-icon-button [matMenuTriggerFor]="moreMenu">
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #moreMenu="matMenu">
+                            <button mat-menu-item (click)="updateMemberRank('R1', item.MemberId)">Update Rank to R1</button>
+                            <button mat-menu-item (click)="updateMemberRank('R2', item.MemberId)">Update Rank to R2</button>
+                            <button mat-menu-item (click)="updateMemberRank('R3', item.MemberId)">Update Rank to R3</button>
+                            <button mat-menu-item (click)="updateMemberRank('R4', item.MemberId)">Update Rank to R4</button>
+                            <button mat-menu-item>Update HQ Level</button>
+                            <button mat-menu-item>Update Username</button>
+                            <button mat-menu-item (click)="deleteMember(item.MemberId)">Delete Member</button>
+                        </mat-menu>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</section>

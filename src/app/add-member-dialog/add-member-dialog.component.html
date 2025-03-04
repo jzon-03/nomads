@@ -1,0 +1,30 @@
+<h2 mat-dialog-title>Add Member</h2>
+<mat-dialog-content>
+
+    <form [formGroup]="memberForm" (ngSubmit)="submit()">
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput formControlName="UserName" required />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Rank</mat-label>
+        <input matInput formControlName="Rank" required />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>HQ Level</mat-label>
+        <input matInput type="number" formControlName="HQLevel" required />
+      </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="Description"></textarea>
+      </mat-form-field>
+    
+      <div mat-dialog-actions>
+        <button mat-button (click)="close()">Cancel</button>
+        <button mat-button type="submit" [disabled]="!memberForm.valid">Add</button>
+      </div>
+    </form>
+</mat-dialog-content>
