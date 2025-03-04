@@ -1,0 +1,16 @@
+<ng-container *ngIf="data">
+    <h3 mat-dialog-title> {{ data.title }} </h3>
+    <mat-dialog-content>
+        {{data.description}}
+    </mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-button [mat-dialog-close]>OK</button>
+    </mat-dialog-actions>
+</ng-container>
+<ng-container *ngIf="!data">
+    <h5 mat-dialog-title>
+        <i>
+            No event
+        </i>
+    </h5>
+</ng-container>

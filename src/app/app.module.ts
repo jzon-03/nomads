@@ -19,6 +19,7 @@ import { TitaniumAlloyCalcComponent } from './titanium-alloy-calc/titanium-alloy
 import { AddMemberDialogComponent } from './add-member-dialog/add-member-dialog.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { CalendarEventComponent } from './calendar/calendar-event/calendar-event.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
     WarzoneExpeditionComponent,
     TitaniumAlloyCalcComponent,
     AddMemberDialogComponent,
-    CalendarComponent
+    CalendarComponent,
+    CalendarEventComponent
   ],
   imports: [
     BrowserModule,

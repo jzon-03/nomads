@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { startOfMonth, endOfMonth, startOfWeek, endOfWeek, addDays, addMonths, subMonths, format, isSameDay } from 'date-fns';
+import { CalendarEventComponent } from './calendar-event/calendar-event.component';
+import { EventsService } from '../services/events.service';
 
 @Component({
   selector: 'app-calendar',
@@ -13,15 +16,20 @@ export class CalendarComponent implements OnInit {
   monthLabel: string = '';
   selectedDate: Date | null = null;
   
-  events: { [key: string]: string } = { 
-    '2025-03-06': 'Murphy Exclusive Weapon', 
-    '2025-03-20': 'Carlie exclusive Weapon', 
-    '2025-04-10': 'Swift exclusive Weapon', 
-    '2025-04-28': 'Age Of Oil/Tempest Beast', 
-  };
+  events!: { [key: string]: any };
+
+  constructor(
+    private _dialog: MatDialog,
+    private _eventService: EventsService
+  ){}
 
   ngOnInit() {
     this.generateCalendar(this.currentDate);
+    this._eventService.getEvents().subscribe({
+      next:(res)=>{
+        this.events = res;
+      }
+    })
   }
 
   generateCalendar(date: Date) {
@@ -58,11 +66,16 @@ export class CalendarComponent implements OnInit {
 
   selectDay(day: Date) {
     this.selectedDate = day;
-    console.log(this.selectedDate)
+    const key = format(day, 'yyyy-MM-dd');
+    const event = this.events[key] ? this.events[key] : null;
+    this._dialog.open(CalendarEventComponent, {
+      data: event
+    })
   }
 
   getEventLabel(date: Date): string | null {
     const key = format(date, 'yyyy-MM-dd');
-    return this.events[key] || null;
+    return this.events[key] ? this.events[key].title : null;
   }
+  
 }

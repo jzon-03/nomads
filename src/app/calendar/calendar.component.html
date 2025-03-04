@@ -1,4 +1,4 @@
-<div class="calendar">
+<div class="calendar" *ngIf="events">
     <div class="calendar-header">
       <button (click)="prevMonth()">&#9665;</button>
       <h2>{{ monthLabel }}</h2>
