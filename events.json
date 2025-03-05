@@ -1,26 +1,66 @@
 {
-    "2025-03-06": {
-        "title": "Murphy Exclusive Weapon",
-        "description": "Murphy's Exclusive Weapon available, turning your hero into the ultimate guardian for your troops with a powerful boost!"
-    },
-    "2025-03-20": {
-        "title": "Carlie Exclusive Weapon",
-        "description": "Carlie's Exclusive Weapon available. The skilled guardian will protect your troops, providing your hero with a significant boost!"
-    },
-    "2025-04-10": {
-        "title": "Swift Exclusive Weapon",
-        "description": "Swift's Exclusive Weapon available. This is an intense firepower party, where your hero will receive a massive boost!"
-    },
-    "2025-04-28": {
-        "title": "Age Of Oil/Tempest Beast/General's Trial",
-        "description": "Fresh energy fuels groundbreaking technology, setting the stage for your base's next big evolution!. Additionally, Tempest Beast unlocks. Kill the Zombie Boss and awaken Glacieradon, the beast lurking beneath the icy surface! Rally your allies for an epic battle! Also, in General's Trial, advanced difficulty unlocks. Take on greater challenges, defeat formidable enemies, and earn universal exclusive weapons!"
-    },
-    "2025-06-02": {
-        "title": "Doomsday",
-        "description": "The infected former baseball legend is causing chaos!"
-    },
-    "2025-06-06": {
-        "title": "Overlord available",
-        "description": "Rescue the Gorilla Overlord to gain a powerful battlefield ally--make your enemies tremble in fear!"
-    }
+    "2025-03-06": [
+        {
+            "title": "Murphy Exclusive Weapon",
+            "description": "Murphy's Exclusive Weapon available, turning your hero into the ultimate guardian for your troops with a powerful boost!",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-1/#additional-event-murphys-exclusive-weapon"
+            ]
+        }
+    ],
+    "2025-03-20": [
+        {
+            "title": "Carlie Exclusive Weapon",
+            "description": "Carlie's Exclusive Weapon available. The skilled guardian will protect your troops, providing your hero with a significant boost!",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-3/#additional-event-carlies-exclusive-weapon"
+            ]
+        }
+    ],
+    "2025-04-10": [
+        {
+            "title": "Swift Exclusive Weapon",
+            "description": "Swift's Exclusive Weapon available. This is an intense firepower party, where your hero will receive a massive boost!",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-6/#additional-event-swift-exclusive-weapon"
+            ]
+        }
+    ],
+    "2025-04-28": [
+        {
+            "title": "Age Of Oil",
+            "description": "Fresh energy fuels groundbreaking technology, setting the stage for your base's next big evolution!.",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-celebration-the-age-of-oil/"
+            ]
+        },
+        {
+            "title": "Tempest Beast",
+            "description": " Tempest Beast unlocks. Kill the Zombie Boss and awaken Glacieradon, the beast lurking beneath the icy surface! Rally your allies for an epic battle!",
+            "links": [
+                "https://www.lastwartutorial.com/zombie-invasion/#zombie-invasion-glacieradon"
+            ]
+        },
+        {
+            "title": "General's Trial",
+            "description": "In General's Trial, advanced difficulty unlocks. Take on greater challenges, defeat formidable enemies, and earn universal exclusive weapons!",
+            "links": [
+
+            ]
+        }
+    ],
+    "2025-06-02": [
+        {
+            "title": "Doomsday",
+            "description": "The infected former baseball legend is causing chaos!",
+            "links": []
+        }
+    ],
+    "2025-06-06": [
+        {
+            "title": "Overlord available",
+            "description": "Rescue the Gorilla Overlord to gain a powerful battlefield ally--make your enemies tremble in fear!",
+            "links": []
+        }
+    ]
 }
