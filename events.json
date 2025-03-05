@@ -12,7 +12,11 @@
         "description": "Swift's Exclusive Weapon available. This is an intense firepower party, where your hero will receive a massive boost!"
     },
     "2025-04-28": {
-        "title": "Age Of Oil/Tempest Beast",
-        "description": "Fresh energy fuels groundbreaking technology, setting the stage for your base's next big evolution!. Additionally, Tempest Beast unlocks. Kill the Zombie Boss and awaken Glacieradon, the beast lurking beneath the icy surface! Rally your allies for an epic battle!"
+        "title": "Age Of Oil/Tempest Beast/General's Trial",
+        "description": "Fresh energy fuels groundbreaking technology, setting the stage for your base's next big evolution!. Additionally, Tempest Beast unlocks. Kill the Zombie Boss and awaken Glacieradon, the beast lurking beneath the icy surface! Rally your allies for an epic battle! Also, in General's Trial, advanced difficulty unlocks. Take on greater challenges, defeat formidable enemies, and earn universal exclusive weapons!"
+    },
+    "2025-06-02": {
+        "title": "Doomsday",
+        "description": "The infected former baseball legend is causing chaos!"
     }
 }
