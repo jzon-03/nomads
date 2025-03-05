@@ -60,7 +60,9 @@
         {
             "title": "Overlord available",
             "description": "Rescue the Gorilla Overlord to gain a powerful battlefield ally--make your enemies tremble in fear!",
-            "links": []
+            "links": [
+                "https://www.lastwartutorial.com/overlord-gorilla/"
+            ]
         }
     ]
 }
