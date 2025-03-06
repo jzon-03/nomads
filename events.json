@@ -8,6 +8,31 @@
             ]
         }
     ],
+    "2025-03-09": [
+        {
+            "title": "Cold Wave Alert! -30C",
+            "description": "Cold waves are coming, this is the same event of week 1: Cold Wave Alert (Min Temp: -20), but blizzards reach level 5 with -30 °C.",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-2/#cold-wave-alert-30"
+            ]
+        },
+        {
+            "title": "Polar Dishes",
+            "description": "This event is quite simple and it consists in gathering ingredients completing daily task quests and then composing meals for the husky Snowflake.",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-2/#week2-02-polar-dishes"
+            ]
+        }
+    ],
+    "2025-03-10": [
+        {
+            "title": "Beast Crisis!",
+            "description": "Emperor Boreas has unleashed his strongest beast troops to attack you. Their main target is the Alliance Furnace. We must defend these heat sources and stop the Emperor’s plans!",
+            "links": [
+                "https://www.lastwartutorial.com/season-2-week-2/#beast-crisis"
+            ]
+        }
+    ],
     "2025-03-12": [
         {
             "title": "Zombie Invasion",
